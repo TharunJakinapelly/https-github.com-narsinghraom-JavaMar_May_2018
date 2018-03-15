@@ -4,7 +4,7 @@ public class B {
 	int i=5;
 	int j=6;
 	public static void main(String[] args) {
-		B b=new B();
+		B b=new B();//object 
 		int k=b.i+b.j;
 		System.out.println(k);
 	}
