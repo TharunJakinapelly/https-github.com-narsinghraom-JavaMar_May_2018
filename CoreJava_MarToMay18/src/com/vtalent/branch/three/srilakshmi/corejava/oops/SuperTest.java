@@ -40,3 +40,4 @@ public class SuperTest
 		System.out.println(so.b);
 	}
 }
+
