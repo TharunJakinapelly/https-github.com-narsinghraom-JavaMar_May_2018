@@ -1,6 +1,6 @@
 package com.vtalent.branch.three.srilakshmi.corejava.oops;
 
-class Test5 {
+class Test10 {
 	 int i,j;
 	 static float f1;
 	 public int function(int i,int j)
@@ -11,7 +11,7 @@ class Test5 {
 		 return(int)f1;
 	 }
 	}
-class Second1 extends Test5
+class Second1 extends Test10
 {
 	 int i;
 	 public int function(int i)

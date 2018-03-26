@@ -1,6 +1,6 @@
 package com.vtalent.branch.three.srilakshmi.corejava.oops;
 
-class Test5 {
+class Test9 {
 	 int i,j;
 	 static float f1;
 	 public int function(int i,int j)
@@ -11,7 +11,7 @@ class Test5 {
 		 return(int)f1;
 	 }
 	}
-class Second extends Test5
+class Second extends Test9
 {
 	 int i;
 	 public int function(int i)
@@ -24,10 +24,10 @@ class Second extends Test5
   public class First1
 {
 	 public static void main(String[] args) {
-		Test5 f1=new Test5();
+		Test9 f1=new Test9();
 		int k=f1.function(2,3);
 		System.out.println(k);
-		System.out.println(Test5.f1);
+		System.out.println(Test9.f1);
 		Second s=new Second();
 		int m=s.function(k);
 		System.out.println(m);

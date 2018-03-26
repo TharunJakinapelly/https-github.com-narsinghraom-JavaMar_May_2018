@@ -1,30 +1,6 @@
 package com.vtalent.branch.three.srilakshmi.corejava.oops;
 
- class overLoad2
-{
-	int x,y;
-	double a,b;
-	public int methodOne(int x,int y)
-	{
-		this.x=x+y;
-		this.y=this.x+(x*y);
-		int z=this.x+this.y;
-		return z;
-	}
-	public double methodOne(double a,double b)
-	{
-		this.a=a+b;
-		this.b=a-b;
-		double c=this.a*this.b;
-		return c;
-	}
-	public void methodOne()
-	{
-		System.out.println("values of x&y:" +x+y);
-		System.out.println("values of a&b:" +a+b);
-	}
-}
-	public class OverRiding extends overLoad2
+public class OverRiding extends overLoad
 {
 	int x;
 	double y;
@@ -57,7 +33,7 @@ package com.vtalent.branch.three.srilakshmi.corejava.oops;
 		int z=or.methodOne(5,7);
 		or.methodOne(5.5,4.6);
 		or.methodOne();
-		overLoad2 ol=new overLoad2();
+		overLoad ol=new overLoad();
 		int i=ol.methodOne(10,20);
 		double n=ol.methodOne(20.0,30.0);
 		ol.methodOne();
