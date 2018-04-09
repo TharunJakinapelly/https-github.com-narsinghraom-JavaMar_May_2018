@@ -2,22 +2,35 @@ package com.vtalent.branch.three.srilakshmi;
 
 public class PrimeNumbers 
 {
+	
 	public static void main(String[] args) 
 	{
-		int num = 2 ;
-		int count = 0;
-		while(count<100)
+		int sum=0;
+		boolean isPrime=true; 
+		for(int i=20;i<60;i++)
 		{
-		for(int i=2;i<=num/2;i++)
-		{
-	    if(num%i==0)
-			System.out.println("not prime");
+			for(int j=2;j<=i/2;j++)
+			{
+				if(i%j==0)
+				{
+					isPrime=false;
+					break;
+				}
 			}
-		System.out.println(num);
-		}
-		count ++;
-	}
 		
+			if(isPrime)
+			{
+				System.out.println(i+",");
+				
+				sum=sum+i;
+			}
+			else
+			{
+				isPrime=true;
+			}
+		}
 	}
+}
+		
 
 
